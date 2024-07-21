@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sorteador Online</title>
+</head>
+
+<body>
+
+    <div class="box-img">
+        <img class="img_one" src="./assets/Dados.png" alt="">
+    </div>
+
+    <div class="logo">
+        <div class="sorteador">Sorteador</div>
+        <div class="online">Online</div>
+    </div>
+
+
+    <p>Sortear um número</p>
+
+
+    <form>
+        <input class="custom-input-min" placeholder="Entre" type="number" min="0">
+
+        <a class="a-reset" type="Reset" href="">Limpar</a>
+
+        <input class="custom-input-max" placeholder="e" type="number" min="0">
+    </form>
+
+    <button onclick="generateNumber(), startCountdown()" class="bnt-sortear">Sortear Agora!</button>
+
+    <div id="countdown"></div>
+
+    <div id="result"></div>
+
+
+</body>
+
+<script src="javascript.js"></script>
+
+</html>
